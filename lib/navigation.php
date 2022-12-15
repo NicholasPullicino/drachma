@@ -1,5 +1,7 @@
 <?php 
+//this is our custom menu
 
+//this functions registers the menus
 function custom_register_menu(){
     register_nav_menus(array(
         'main-menu' => 'Main Menu',
@@ -7,6 +9,7 @@ function custom_register_menu(){
     ));
 }
 
+//hook
 add_action('init', 'custom_register_menu');
 
 ?>

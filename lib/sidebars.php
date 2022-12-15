@@ -1,5 +1,6 @@
 <?php
 
+    //Widgets
     function drachma_sidebar_widgets(){
         register_sidebar(array(
             'id' => 'primary-sidebar',
@@ -21,8 +22,10 @@
             'after_title' => '</h5>'
         ));
 
+        //amount of widgets the user can choose from wordpress website in customize
         $footer_widget_count = get_theme_mod("drachma_footer_widgets", "3");
 
+        //loop with counter - the amount of widgets are created depending on the user's input
         for ($i = 0; $i < $footer_widget_count; $i++){
             register_sidebar(array(
                 'id' => 'footer-sidebar-'.($i+1),
@@ -37,5 +40,6 @@
 
     }
 
+    //hook
     add_action('widgets_init', 'drachma_sidebar_widgets');
 ?>

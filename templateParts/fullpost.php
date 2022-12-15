@@ -20,12 +20,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
+                        <!-- author's image -->
                         <?php echo get_avatar($author_id, 200); ?>
                     </div>
                     <div class="col">
 
+                    <!-- checks whether there is author's URL in database -->
                     <?php if($author_url){?>
+
+                        <!-- clickable author name with page URL -->
                         <a href="<?php echo $author_url; ?>">
+
+                            <!-- displays name of author -->
                             <?php echo $author_display; ?>
                         </a>
                     <?php
@@ -34,6 +40,7 @@
                     } 
                     ?>
 
+                    <!-- displays author bio, first checks whether there is a bio -->
                     <?php
                         if ($author_desc){ ?>
                         <p>
@@ -41,7 +48,9 @@
                     </p>
                     <?php } ?>
 
-                    <?php if($author_posts > 1) { ?>
+                    <!-- checks whether there are posts linked to that author -->
+                    <?php 
+                    if($author_posts > 1) { ?>
                         <div>
                             <a href="<?php echo $author_posts_url; ?>">
                                 <?php echo $author_posts;?> More posts by <?php echo $author_display;?> </a>
@@ -57,17 +66,20 @@
                     </div>
 
                     <div>
+                        <!-- if there are categories, display them -->
                         <?php if(has_category()) {
                             echo '<h5>Categories</h5>'.get_the_category_list(', ');
                         }?>
                     </div>
 
                     <div>
+                        <!-- if there is a tag, display it -->
                         <?php if(has_tag()) {
                             echo '<h5>Tags</h5>'.get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
                         }?>
                     </div>
 
+                    <!-- comment section -->
                     <?php comments_template(); ?> 
                 </article>             
                 <?php endwhile;
