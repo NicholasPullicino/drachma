@@ -1,27 +1,25 @@
+<!-- dan file li ed jistenna wordpress so ha jkun fir root folder -->
+
 <?php
     get_header();
 ?>
 
-<div class="container">
-    <div class="row">
-        <div class="col-8">
-            <div class="posts">
-            <?php
-                //creating an array and calling it in loop.php to diplay titles when searching
-                $args = array('section_title' => 'Posts'); 
+<div class="posts">
+<?php 
 
-                //calling loop.php
-                get_template_part('templateParts/loop', null, $args);
-            ?>
-            </div>
-            <div class="col-4">
+// qed namlu array u najjtula fil loop.php biex namlu display it title xhin namlu search
+$args = array('section_title' => 'List of Posts');
+// din tajjat l file tal-loop.php
+    get_template_part('templateParts/loop', null, $args);
 
-                <!-- searches sidebar of widgets -->
-                <?php get_sidebar(); ?>
-            </div>
-        </div>
+?>
+
     </div>
-</div>
+
+    <!-- din se tfittex s sidebar tal widgets -->
+    <div class="col-4">
+        <?php get_sidebar();?>
+    </div>
 
 <?php
     get_footer();

@@ -1,10 +1,10 @@
 <!-- another version of sidebar.php -->
 
 <div class="col-4" style="background-color:red;">
-
+    <!-- aside bex l browser ikun jaf li din at the side placed -->
     <aside>
 
-        <!-- this loop is to check whether the primary sidebar exists or not  -->
+        <!-- din l function biex tara primary sidebar tezistix halli jekk le itik error mux jikkrexja -->
         <?php
         if(is_active_sidebar('ad-sidebar')){
             dynamic_sidebar('ad-sidebar');
