@@ -3,7 +3,7 @@
 //this is our custom menu
 
 //this functions registers the menus
-function drachma_register_menus(){
+function custom_register_menus(){
         register_nav_menus(array(
             'main-menu' => 'Main Menu',
             'footer-menu' => 'Footer Menu'
@@ -11,6 +11,6 @@ function drachma_register_menus(){
     }
 
     //hook
-    add_action('init', 'drachma_register_menus');
+    add_action('init', 'custom_register_menus');
 
 ?>

@@ -13,7 +13,7 @@
 
 <body <?php body_class(); ?>>
   
-<?php $header_bg = get_theme_mod('drachma_header_bg', 'light'); ?>
+<?php $header_bg = get_theme_mod('custom_header_bg', 'light'); ?>
 
 <header class= "header-<?php echo $header_bg; ?>">
 
