@@ -1,24 +1,23 @@
 
 
 <?php
-// <!-- Hloqna function custom_assets u hloqna function ohra fija jisima wp_enqueue_style to enqueue a style sheet in it -->
-    function custom_assets(){
+    //created a function called drachma_assets and created wp_enqueue_style to enqueue a style sheet in it 
+    function drachma_assets(){
         wp_enqueue_style(
-            // this is a unique name li se jider fl html
+            //a unique name that will be displayed in html
             'custom-stylesheet', 
 
-            // iggib r rootfolder tal active template taghna
-            get_template_directory_uri().'/assets/css/custom_style.css',
+            //fetches the active template's rootfolder
+            get_template_directory_uri().'/assets/css/drachma_style.css',
             array(),
 
-            // You can override the version by changing this
+            //version - can be overridden here
             '1.0.2',
 
-            // this stylesheet will be used in all medai modes (printing, digital, more)
+            //this stylesheet will be used in all media modes (printing, digital, and more)
             'all'
         );
 
-        // dan id decleration tas css file tal light mode theme for the header
         wp_enqueue_style(
 
             'head-stylesheet', 
@@ -42,7 +41,7 @@
             'all'
         );
 
-        // to link bootstrap.css 
+        //decleration of CSS File
         wp_enqueue_style(
             'custom-bootstrap-stylesheet',
             get_template_directory_uri(). '/assets/css/bootstrap.css',
@@ -51,7 +50,7 @@
             'all'
         );
 
-        // to link bootstrap.js
+        //decleration of JS File
         wp_enqueue_script(
             'custom-bootstrap-scripts',
             get_template_directory_uri().'/assets/js/bootstrap.js',
@@ -67,5 +66,5 @@
 
     // add_action means to add an action to something
     // below is the hook
-    add_action('wp_enqueue_scripts', 'custom_assets');
+    add_action('wp_enqueue_scripts', 'drachma_assets');
 ?>

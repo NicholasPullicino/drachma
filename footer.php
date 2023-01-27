@@ -1,8 +1,8 @@
 <!-- All the wesite's footers -->
 
 
-  <!-- get theme mod biex iggib xi haga mill customizer -->
-  <?php $footer_bg = get_theme_mod('custom_footer_bg', 'light'); ?>
+  <!-- get theme mod from customizer -->
+  <?php $footer_bg = get_theme_mod('drachma_footer_bg', 'light'); ?>
 
 <footer class="footer-<?php echo $footer_bg; ?>">
 
@@ -66,7 +66,7 @@
       to display the amount of widgets the user inputted  -->
   <?php 
   
-      $footer_widget_count = get_theme_mod("custom_footer_widgets", "3");
+      $footer_widget_count = get_theme_mod("drachma_footer_widgets", "3");
       for($i = 0; $i < $footer_widget_count; $i++){
         echo "<div class='col'";
 
