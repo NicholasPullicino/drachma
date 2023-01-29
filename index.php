@@ -3,7 +3,7 @@
 ?>
 
     <!-- search bar, get_search_form is a function = whether or not it displays that form -->
-    <?php get_search_form(true);?>
+    <?php //get_search_form(true);?>
  
     <div class="image">
         <h1>My Blog</h1>
