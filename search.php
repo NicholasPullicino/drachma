@@ -7,7 +7,7 @@
 //creating an array and calling it from loop.php to display title when searching
 $args2 = array('section_title' => 'Search Results');
 
-    //calling loop.php 
+// din tajjat l file tal-loop.php
     get_template_part('templateParts/loop', null, $args2);
 
 ?>
@@ -18,7 +18,7 @@ $args2 = array('section_title' => 'Search Results');
         //the_post fetches the last post's details and moves the pointer by one to create a new post - uses super global $Post
         
         // checks whether any posts are created
-            if(have_posts()): while(have_posts( )): the_post();
+        if(have_posts()): while(have_posts( )): the_post();
         ?>
 
             <div class="post">

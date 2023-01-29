@@ -1,7 +1,6 @@
 <!-- another version of sidebar.php -->
 
 <div class="col-4" style="background-color:red;">
-
     <aside>
 
         <!-- this loop is to check whether the primary sidebar exists or not  -->
