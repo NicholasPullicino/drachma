@@ -6,18 +6,17 @@
 
 <div class="posts">
 <?php 
-
-// qed namlu array u najjtula fil loop.php biex namlu display it title xhin namlu search
-$args = array('section_title' => 'List of Posts');
-// din tajjat l file tal-loop.php
+    //creating an array and calling it in loop.php to diplay titles when searching
+    $args = array('section_title' => 'List of Posts');
+    //calling loop.php
     get_template_part('templateParts/loop', null, $args);
 
 ?>
 
     </div>
 
-    <!-- din se tfittex s sidebar tal widgets -->
-    <div class="col-4">
+        <!-- searches sidebar of widgets -->
+        <div class="col-4">
         <?php get_sidebar();?>
     </div>
 

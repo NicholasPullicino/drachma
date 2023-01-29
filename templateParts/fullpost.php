@@ -80,7 +80,7 @@
                     </div>
 
                     <!-- comment section -->
-                    <?php comments_template(); ?> 
+                    <?php //comments_template(); ?>
                 </article>             
                 <?php endwhile;
                 endif;?>

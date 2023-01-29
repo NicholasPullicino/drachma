@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="bio_text">
-            <h5>Clyde Curmi - Faculty of Arts - Biography</h5>
+            <h5>Biography</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. </p>
             <a class="bio_info">More info.</a>
         </div>

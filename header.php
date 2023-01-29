@@ -17,8 +17,9 @@
 
 <header class= "header-<?php echo $header_bg; ?>">
 
-  <a href="#default" class="logo">Clyde Curmi's Blog</a>
+  <a href="#default" class="logo">Drachma</a>
   <div class="header-right">
+  <?php echo do_shortcode( '[searchandfilter fields="search,category,post_tag"]' ); ?>
     <?php wp_nav_menu(array(
         'theme_location' => 'main-menu'
       )); ?>
