@@ -1,5 +1,3 @@
-<!-- dan file li ed jistenna wordpress so ha jkun fir root folder -->
-
 <?php
     get_header();
 ?>
