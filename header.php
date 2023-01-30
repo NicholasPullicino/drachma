@@ -17,14 +17,36 @@
 
 <header class= "header-<?php echo $header_bg; ?>">
 
+
+
   <a href="#default" class="logo">Drachma</a>
   <div class="header-right">
-  <?php echo do_shortcode( '[searchandfilter fields="search,category,post_tag"]' ); ?>
+
+  
+  <!-- <?php echo do_shortcode( '[searchandfilter fields="search,category,post_tag"]' ); ?>
     <?php wp_nav_menu(array(
         'theme_location' => 'main-menu'
+      )); ?> -->
+
+<?php wp_nav_menu(array(
+        'theme_location' => 'main-menu'
       )); ?>
+      <form class="search-bar" action="/action_page.php">
+      <input class="search-bar2" type="text" placeholder="Search.." name="search"></i></button>
+    </form>
+      
+</div>
 
-
+    <!-- <ul class="grid_container">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">About</a></li>
+      <li><a href="#contact">Posts</a></li>
+      <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search"></i></button>
+      </form>
+    </div>
+    </ul> -->
   </div>
 
 </header>
