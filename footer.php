@@ -57,17 +57,22 @@
 
 
   <!-- awnekk fil php ajjatna footer bg biex il user ikun jista ibiddel bejn dark u light mode -->
-  <div class="footer_container2">
-    <h5>Lorem Ipsum</h5>
-    <p class="container2_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  </div>
-
+  
+  <!-- <div class="footer_container2">
+    <div class="div1">
+    <h5>Seek Truth, Sexual, and Spirit Integration</h5>
+    </br>
+    </div> -->
 <!-- 
       to display the amount of widgets the user inputted  -->
+      <div class="div2">
+
+     
   <?php 
-  
       $footer_widget_count = get_theme_mod("custom_footer_widgets", "3");
+      
       for($i = 0; $i < $footer_widget_count; $i++){
+        
         echo "<div class='col'";
 
           if (is_active_sidebar('footer-sidebar-'.($i+1))){
@@ -77,6 +82,8 @@
         echo "</div>";
       }
   ?>
+  <!-- </div>
+      </div> -->
 
 </footer>
 </body>
