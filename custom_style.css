@@ -18,7 +18,7 @@ header a {
   float: left;
   color: #45474A;
   text-align: center;
-  padding: 12px;
+  padding: 14px;
   text-decoration: none;
   font-size: 18px; 
   line-height: 25px;
@@ -42,7 +42,18 @@ header a.active {
 .header-right {
   width: 40%;
   float: right;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
+
+.search-bar2{
+  float: right;
+}
+
+.menu-header-drachma-menu-container{
+  padding-left: 170px;
+}
+
 
 .grid_container {
   display: grid;
@@ -309,6 +320,7 @@ ul{
   padding: 0% 5% 1% 4%;
   font-size: 20px;
 }
+
 
 
 
