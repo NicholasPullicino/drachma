@@ -1,6 +1,6 @@
 
 <?php
-// <!-- custom_maintenancemode is a cutom function, we write custom before to make sure that wordpress does not have the same function name -->
+// <!-- drachmaWebsite_maintenancemode is a cutom function, we write custom before to make sure that wordpress does not have the same function name -->
 // <!-- current_user_can() is to see if the user can edit post or not for example if the user is logged out he cannot edit any posts -->
 // <!-- wp_die kills an execution and displays a message-->
 
@@ -11,12 +11,12 @@
     require_once('lib/customize.php');
 
     //maintenance message - if the user does not access for a page, or is not logged in, this message is displayed
-    function custom_maintenancemode(){
+    function drachmaWebsite_maintenancemode(){
     if(!current_user_can('edit_posts')){
         wp_die('<h1> Maintenance!</h1><p> Please not that the site is undergoing maintenance</p>');
     }
 }
-    add_action ('get_header', 'custom_maintenancemode');
+    add_action ('get_header', 'drachmaWebsite_maintenancemode');
 
 
 ?>

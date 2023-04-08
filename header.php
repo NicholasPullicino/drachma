@@ -13,20 +13,12 @@
 
 <body <?php body_class(); ?>>
   
-<?php $header_bg = get_theme_mod('custom_header_bg', 'light'); ?>
+<?php $header_bg = get_theme_mod('drachmaWebsite_header_bg', 'light'); ?>
 
 <header class= "header-<?php echo $header_bg; ?>">
 
-
-
-  <a href="#default" class="logo">Drachma</a>
-  <div class="header-right">
-
-  
-  <?php echo do_shortcode( '[searchandfilter fields="search,category,post_tag"]' ); ?>
-    <?php wp_nav_menu(array(
-        'theme_location' => 'main-menu'
-      )); ?>
+  <!-- <a href="#default" class="logo">Drachma</a>
+  <div class="header-right"> -->
 
       <!-- <form class="search-bar" action="/action_page.php">
       <input class="search-bar2" type="text" placeholder="Search.." name="search"></i></button>
